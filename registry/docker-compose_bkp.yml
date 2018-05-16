@@ -12,7 +12,7 @@ services:
     image: registry:2
     restart: unless-stopped
     ports:
-     - 5500:5000
+     - 5000:5000
     volumes:
      - data:/var/lib/registry
      - registry_certs:/certs
