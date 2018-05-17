@@ -5,6 +5,8 @@ volumes:
 services:
   monit:
     image: docker.elastic.co/beats/metricbeat:6.1.2
+    pid: "host"
+    hostname: joel_host
     volumes:
      - beats-data:/usr/share/metricbeat
      - /var/run/docker.sock:/var/run/docker.sock
